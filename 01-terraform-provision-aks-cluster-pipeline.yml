@@ -39,10 +39,10 @@ stages:
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
           backendType: 'azurerm'
           backendServiceArm: 'terraform-aks-azurerm-svc-con'
-          backendAzureRmResourceGroupName: 'terraform-storage-rg'
-          backendAzureRmStorageAccountName: 'terraformstatexlrwdrzs'
-          backendAzureRmContainerName: 'tfstatefiles'
-          backendAzureRmKey: 'aks-base.tfstate'
+          backendAzureRmResourceGroupName: 'tfstatexwen11'
+          backendAzureRmStorageAccountName: 'tfstatexwen11'
+          backendAzureRmContainerName: 'tfstatexwen'
+          backendAzureRmKey: 'terraform.tfstate'
           allowTelemetryCollection: false
       - task: TerraformCLI@0
         displayName: Terraform Validate
