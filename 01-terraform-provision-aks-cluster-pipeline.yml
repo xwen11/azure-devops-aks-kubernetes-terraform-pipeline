@@ -50,11 +50,11 @@ stages:
           command: 'validate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
           allowTelemetryCollection: false
-      - task : TerraformCLI@0
-        displayName: Terraform Unlock
-        inputs:
-          command: 'force-unlock'
-          lockId: 'c520f0f0-0861-81e7-f045-ec80a6efa34e'
+      # - task : TerraformCLI@0
+      #   displayName: Terraform Unlock
+      #   inputs:
+      #     command: 'force-unlock'
+      #     lockId: 'c520f0f0-0861-81e7-f045-ec80a6efa34e'
 
 
 # Stage-2: Deploy Stages for Dev & QA
