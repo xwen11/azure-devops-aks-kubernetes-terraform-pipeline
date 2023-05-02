@@ -50,6 +50,11 @@ stages:
           command: 'validate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
           allowTelemetryCollection: false
+      - task : TerraformCLI@0
+        displayName: Terraform Unlock
+        inputs:
+          command: 'force-unlock'
+
 
 # Stage-2: Deploy Stages for Dev & QA
 # Deployment-1: Deploy Dev AKS Cluster
