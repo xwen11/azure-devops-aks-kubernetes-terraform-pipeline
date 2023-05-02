@@ -33,7 +33,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   identity { type = "SystemAssigned" }
 
 # RBAC and Azure AD Integration Block
-role_based_access_control = true
+role_based_access_control_enabled = true
 
 # Windows Admin Profile
 windows_profile {
